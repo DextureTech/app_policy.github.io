@@ -354,8 +354,8 @@ By using the YUB Steam Worker App, you agree to this Privacy Policy and related 
 If you have questions or privacy-related concerns:
 
 ## 📧 Email Support
-- technology.organizationsa@gmail.com
-- esoodawood186@gmail.com
+- developer@tec-org.com
+- dexteroustech5@gmail.com
 
 ---
 
@@ -389,7 +389,7 @@ This Privacy Policy is designed to align with:
 |---|---|
 | App Name | YUB Steam Worker |
 | Bundle ID | `yub.worker.techorg` |
-| Developer | Esraa Mohamad AbdelHafiz / TechOrg |
+| Developer | Dexterous Tech / TechOrg |
 
 ---
 
