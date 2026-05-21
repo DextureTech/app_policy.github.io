@@ -20,8 +20,8 @@ This repository contains:
 
 | Application | Document |
 |------------|----------|
-| **YUB Steam Client** | [View Privacy Policy](YOUR_PRIVACY_LINK_HERE) |
-| **YUB Steam Worker** | [View Privacy Policy](YOUR_PRIVACY_LINK_HERE) |
+| **YUB Steam Client** | [View Privacy Policy](https://dexturetech.github.io/app_policy.github.io/PRIVACY_POLICY_YUB_STEAM_CLIENT.html) |
+| **YUB Steam Worker** | [View Privacy Policy](https://dexturetech.github.io/app_policy.github.io/PRIVACY_POLICY_YUB_STEAM_WORKER.html) |
 
 ---
 
@@ -29,8 +29,8 @@ This repository contains:
 
 | Application | Document |
 |------------|----------|
-| **YUB Steam Client** | [View Terms & Conditions](YOUR_TERMS_LINK_HERE) |
-| **YUB Steam Worker** | [View Terms & Conditions](YOUR_TERMS_LINK_HERE) |
+| **YUB Steam Client** | [View Terms & Conditions](https://dexturetech.github.io/app_policy.github.io/TERMS_YUB_STEAM_CLIENT.html) |
+| **YUB Steam Worker** | [View Terms & Conditions](https://dexturetech.github.io/app_policy.github.io/TERMS_YUB_STEAM_WORKER.html) |
 
 ---
 
