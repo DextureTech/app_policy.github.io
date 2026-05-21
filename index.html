@@ -1,66 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Dexterous Tech Documentation</title>
+
+  <meta
+    name="description"
+    content="Official documentation and legal policies for Dexterous Tech applications."
+  />
+
+  <!-- GitHub Markdown CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css"
+  />
+
+  <!-- Highlight.js -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
+      background: #0d1117;
+      color: #e6edf3;
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
-      padding: 0 20px;
-      background-color: #f9f9f9;
+      min-height: 100vh;
     }
-    h1, h2, h3 {
-      color: #333;
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
     }
-    pre {
-      background: #eee;
-      padding: 10px;
+
+    /* ========================= */
+    /* HERO SECTION */
+    /* ========================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 35px;
+      padding: 60px 25px;
+      border-radius: 24px;
+      background:
+        linear-gradient(
+          135deg,
+          #161b22,
+          #1f2937,
+          #111827
+        );
+      border: 1px solid #30363d;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(88, 166, 255, 0.08);
+      border-radius: 50%;
+      top: -100px;
+      right: -100px;
+      filter: blur(20px);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 3.4rem;
+      margin-bottom: 15px;
+      color: #58a6ff;
+      z-index: 2;
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 2;
+      color: #c9d1d9;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    /* ========================= */
+    /* PROFILE CARD */
+    /* ========================= */
+
+    .profile-card {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      padding: 25px;
+      border-radius: 22px;
+      margin-bottom: 35px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      flex-wrap: wrap;
+    }
+
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #58a6ff;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-info h2 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #58a6ff;
+    }
+
+    .profile-info p {
+      color: #c9d1d9;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .profile-stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      padding: 12px 18px;
+      border-radius: 14px;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    .stat h3 {
+      color: #58a6ff;
+      margin-bottom: 5px;
+    }
+
+    .stat span {
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
+
+    /* ========================= */
+    /* README SECTION */
+    /* ========================= */
+
+    .markdown-body {
+      background: #161b22;
+      padding: 45px;
+      border-radius: 24px;
+      border: 1px solid #30363d;
+      color: #e6edf3;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    }
+
+    .markdown-body table {
+      display: block;
       overflow-x: auto;
     }
-    a {
-      color: #0366d6;
+
+    .markdown-body img {
+      max-width: 100%;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 60px;
+      color: #8b949e;
+      font-size: 1.2rem;
+    }
+
+    /* ========================= */
+    /* FOOTER */
+    /* ========================= */
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 25px;
+      color: #8b949e;
+    }
+
+    .footer a {
+      color: #58a6ff;
       text-decoration: none;
     }
-    a:hover {
+
+    .footer a:hover {
       text-decoration: underline;
+    }
+
+    /* ========================= */
+    /* RESPONSIVE */
+    /* ========================= */
+
+    @media (max-width: 768px) {
+
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+
+      .markdown-body {
+        padding: 20px;
+      }
+
+      .profile-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-stats {
+        justify-content: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<h1>Welcome to My Project</h1>
+  <div class="container">
 
-<div id="readme">
-  <!-- README content will load here -->
-</div>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>🚀 Dexterous Tech</h1>
 
-<script>
-  // جلب README.md بصيغة raw من GitHub
-  const username = "esraa-mohamad";
-  const repo = "app_policy.github.io";
-  const branch = "main";
-  const url = `https://raw.githubusercontent.com/${username}/${repo}/${branch}/README.md`;
+      <p>
+        Official Documentation, Privacy Policies,
+        Terms & Conditions, and application information
+        for Dexterous Tech products and services.
+      </p>
+    </section>
 
-  fetch(url)
-    .then(response => response.text())
-    .then(md => {
-      // تحويل Markdown بسيط إلى HTML
-      const html = md
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-        .replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>')
-        .replace(/\*(.*)\*/gim, '<em>$1</em>')
-        .replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
-        .replace(/\n$/g, '<br>');
+    <!-- PROFILE CARD -->
+    <section class="profile-card">
 
-      document.getElementById("readme").innerHTML = html;
-    })
-    .catch(err => console.log("Error loading README:", err));
-</script>
+      <img
+        id="avatar"
+        src="https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+        alt="GitHub Avatar"
+      />
+
+      <div class="profile-info">
+
+        <h2 id="github-name">Loading...</h2>
+
+        <p id="github-bio">
+          Fetching GitHub account information...
+        </p>
+
+        <div class="profile-stats">
+
+          <div class="stat">
+            <h3 id="repo-count">0</h3>
+            <span>Repositories</span>
+          </div>
+
+          <div class="stat">
+            <h3 id="followers-count">0</h3>
+            <span>Followers</span>
+          </div>
+
+          <div class="stat">
+            <h3 id="following-count">0</h3>
+            <span>Following</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- README -->
+    <article id="readme" class="markdown-body">
+      <div class="loading">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+        <br><br>
+        Loading Documentation...
+      </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      Made with ❤️ by
+      <a
+        href="https://github.com/DextureTech"
+        target="_blank"
+      >
+        Dexterous Tech
+      </a>
+    </footer>
+
+  </div>
+
+  <!-- Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <script>
+
+    // ==============================
+    // GitHub Configuration
+    // ==============================
+
+    const username = "DextureTech";
+    const repo = "app_policy.github.io";
+    const branch = "main";
+
+    const readmeURL =
+      `https://raw.githubusercontent.com/${username}/${repo}/${branch}/README.md`;
+
+    const githubApi =
+      `https://api.github.com/users/${username}`;
+
+    // ==============================
+    // Markdown Configuration
+    // ==============================
+
+    marked.setOptions({
+      breaks: true,
+      gfm: true,
+      highlight: function(code, lang) {
+
+        if (lang && hljs.getLanguage(lang)) {
+
+          return hljs.highlight(code, {
+            language: lang
+          }).value;
+        }
+
+        return hljs.highlightAuto(code).value;
+      }
+    });
+
+    // ==============================
+    // Load GitHub Profile
+    // ==============================
+
+    async function loadGitHubProfile() {
+
+      try {
+
+        const response = await fetch(githubApi);
+
+        const data = await response.json();
+
+        document.getElementById("avatar").src =
+          data.avatar_url;
+
+        document.getElementById("github-name").innerText =
+          data.name || data.login;
+
+        document.getElementById("github-bio").innerText =
+          data.bio || "Software Organization";
+
+        document.getElementById("repo-count").innerText =
+          data.public_repos;
+
+        document.getElementById("followers-count").innerText =
+          data.followers;
+
+        document.getElementById("following-count").innerText =
+          data.following;
+
+      } catch (error) {
+
+        console.error(
+          "Failed to load GitHub profile:",
+          error
+        );
+      }
+    }
+
+    // ==============================
+    // Load README.md
+    // ==============================
+
+    async function loadReadme() {
+
+      try {
+
+        const response = await fetch(readmeURL);
+
+        if (!response.ok) {
+
+          throw new Error(
+            "Failed to fetch README.md"
+          );
+        }
+
+        const markdown = await response.text();
+
+        const html = marked.parse(markdown);
+
+        document.getElementById("readme").innerHTML =
+          html;
+
+        // Open links in new tab
+        document
+          .querySelectorAll("#readme a")
+          .forEach(link => {
+
+            link.setAttribute("target", "_blank");
+          });
+
+      } catch (error) {
+
+        document.getElementById("readme").innerHTML = `
+          <div style="
+            text-align:center;
+            padding:60px;
+            color:#ff7b72;
+          ">
+            <h2>
+              ⚠ Failed to Load Documentation
+            </h2>
+
+            <br>
+
+            <p>${error.message}</p>
+          </div>
+        `;
+
+        console.error(error);
+      }
+    }
+
+    // ==============================
+    // Initialize
+    // ==============================
+
+    loadGitHubProfile();
+    loadReadme();
+
+  </script>
 
 </body>
 </html>
