@@ -254,7 +254,7 @@ These Terms, together with our Privacy Policy, constitute the entire agreement b
 
 If you have any questions about these Terms, please contact us at:
 
-**Email:** [esoodawood186@gmail.com]  
+**Email:** [dexteroustech5@gmail.com]  
 **Address:** [TechOrg — Technology Organization]  
 **App Support:** Technical support and complaints features within the App
 
@@ -287,6 +287,6 @@ By using the YUB Steam Client App, you acknowledge that you have read, understoo
 - **App Name:** YUB Steam Client
 - **Bundle ID:** yub.client.techorg
 - **API:** https://app.yubsteam.com/api
-- **Developer:** [TechOrg / Developed by Esraa Mohamad AbdelHafiz]
+- **Developer:** [TechOrg / Developed by Dexterous Tech]
 
 *These Terms and Conditions are effective as of the date stated above and apply to all users of the YUB Steam Client App.*
