@@ -305,8 +305,9 @@ By using the YUB Steam Client App, you agree to this Privacy Policy and our data
 If you have any questions or privacy-related requests:
 
 ## 📧 Email Support
-- technology.organizationsa@gmail.com
-- esoodawood186@gmail.com
+- developer@tec-org.com
+- dexteroustech5@gmail.com
+
 
 ## 🛠 In-App Support
 Use the support & complaints section inside the App.
@@ -330,7 +331,7 @@ This Privacy Policy is designed to align with:
 |---|---|
 | App Name | YUB Steam Client |
 | Bundle ID | `yub.client.techorg` |
-| Developer | Esraa Mohamad AbdelHafiz / TechOrg |
+| Developer | Dexterous Tech / TechOrg |
 
 ---
 
