@@ -208,7 +208,7 @@ These Terms and the Privacy Policy constitute the agreement between you and us r
 
 ## Contact Information
 
-**Email:** [esoodawood186@gmail.com]  
+**Email:** [dexteroustech5@gmail.com]  
 **Address:** [TechOrg — Technology Organization]  
 **App Support:** Complaints feature within the App; operational issues should also be reported to your administrator
 
@@ -241,6 +241,6 @@ By using the YUB Steam Worker App, you acknowledge that you have read, understoo
 - **App Name:** YUB Steam Worker
 - **Bundle ID:** yub.worker.techorg
 - **API:** https://app.yubsteam.com/api
-- **Developer:** [TechOrg / Developed by Esraa Mohamad AbdelHafiz]
+- **Developer:** [TechOrg / Developed by Dexterous Tech]
 
 *These Terms and Conditions are effective as of the date stated above and apply to all authorized users of the YUB Steam Worker App.*
