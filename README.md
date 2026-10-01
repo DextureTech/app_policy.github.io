@@ -22,6 +22,9 @@ This repository contains:
 |------------|----------|
 | **YUB Steam Client** | [View Privacy Policy](https://dexturetech.github.io/app_policy.github.io/PRIVACY_POLICY_YUB_STEAM_CLIENT.html) |
 | **YUB Steam Worker** | [View Privacy Policy](https://dexturetech.github.io/app_policy.github.io/PRIVACY_POLICY_YUB_STEAM_WORKER.html) |
+|------------|----------|
+| **Jiran APP** | [View Privacy Policy](https://dexturetech.github.io/app_policy.github.io/PRIVACY_POLICY_JIRAN.html) |
+
 
 ---
 
@@ -31,6 +34,9 @@ This repository contains:
 |------------|----------|
 | **YUB Steam Client** | [View Terms & Conditions](https://dexturetech.github.io/app_policy.github.io/TERMS_YUB_STEAM_CLIENT.html) |
 | **YUB Steam Worker** | [View Terms & Conditions](https://dexturetech.github.io/app_policy.github.io/TERMS_YUB_STEAM_WORKER.html) |
+|------------|----------|
+| **Jiran App** | [View Terms & Conditions](https://dexturetech.github.io/app_policy.github.io/TERMS_JIRAN.html) |
+
 
 ---
 
